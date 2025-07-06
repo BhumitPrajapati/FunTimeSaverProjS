@@ -117,7 +117,7 @@ export default async function createMyWordDocument(aiPrompt) {
                                 ],
                                 [ // Second row
                                     { text: ["Technology:"], isBullet: true, bulletLevel: 0, fontSize: 22, bold: true },
-                                    { text: 'Node.js, Express.js, SQL Server, MySQL, MongoDB, PostgreSQL, AWS, Git, Docker, CI/CD Pipelines, Python Pipelines, LLM integrations, WebSocket.io, React.js, TailwindCSS, Apache Kafka' },
+                                    { text: 'Node.js, Express.js, SQL Server, MySQL, MongoDB, PostgreSQL, AWS, Git, Docker, CI/CD Pipelines, Python Pipelines, LLM integrations, PowerBI, React.js, TailwindCSS' },
                                 ],
                                 [ // Third row
                                     { text: ['Others:'], isBullet: true, bulletLevel: 0, fontSize: 22, bold: true },
