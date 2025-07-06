@@ -41,7 +41,7 @@ import createMyWordDocument from '../resumeBuilder/main.js';
 // Occasional overtime as needed by the team`;
 
 const genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-// const genAI = new GoogleGenAI({ apiKey: "process" });
+// const genAI = new GoogleGenAI({ apiKey: "AIzaSyAHbEf5Tmv6oH2JA17iWvYdO6ELG-wGQC4" });
 
 // let prompt = {
 //   profSummary: `Generate a 3-5 sentence professional summary, tailored specifically to the provided job description. The summary should immediately highlight my 2+ years of web development experience, with a strong emphasis on my proficiency in database and API optimization, large data handling, and efficient CI/CD implementation. Incorporate technical keywords from the job description that align with my skills (JavaScript, APIs, SQL, Docker, cloud) while demonstrating my ability to build fast, scalable, and reliable systems. Prioritize the skills and requirements emphasized in the job description that directly align with my past experience. and i have capability of fast learning. 
@@ -70,14 +70,14 @@ const aiPrompt = async (jobDescriptionParam, options) => {
   } else if (options == "shivamPrompt") {
     // prompt.shivamPrompt;
 
-    return `Generate 3 to 4 unique sentences, in ATS-friendly paragraph for a resume's "Work Experience" section. Each sentence must start with a strong action verb, highlight specific accomplishments (following an "Action + Result" or "Challenge/Context, Action, Result" structure), incorporate keywords and mirror phrasing from the provided job description, and implicitly or explicitly demonstrate quantifiable impact where appropriate. Ensure all Sentences are grammatically correct and free of typos. Only give me output, not even extra word.
+    return `Generate 3 to 4 unique sentences, in ATS-friendly paragraph for a resume's "Work Experience" section. Each sentence must start with a strong action verb, do not add any percentage and numbers, highlight specific accomplishments (following an "Action + Result" or "Challenge/Context, Action, Result" structure), incorporate keywords and mirror phrasing from the provided job description, and implicitly or explicitly demonstrate quantifiable impact where appropriate. Ensure all Sentences are grammatically correct and free of typos. Only give me output, not even extra word.
   My Core Experience Summary (for AI reference):
   Designed and implemented scalable APIs to enhance the CRM system’s functionality and integration.Optimized SQL queries and stored procedures to improve database performance and reliability.Managed deployments using CI/CD pipelines and Docker, streamlining the release process.Collaborated with cross-functional teams and clients to deliver robust backend solutions.My Key Skills/Expertise (for AI reference): JavaScript, APIs, SQL, Docker, cloud technologies, database optimization, API optimization, large data handling, efficient CI/CD implementation, building fast/scalable/reliable systems, client-facing project delivery, cross-functional collaboration, problem-solving, debugging, fast learning.
 
   job description: ${jobDescriptionParam}`
   } else if (options == "technokritPrompt") {
     // prompt.technokritPrompt;
-    return `Generate 3 unique sentences, in ATS-friendly paragraph for a resume's "Work Experience" section. Each sentence must start with a strong action verb, highlight specific accomplishments (following an "Action + Result" or "Challenge/Context, Action, Result" structure), incorporate keywords and mirror phrasing from the provided job description, and implicitly or explicitly demonstrate quantifiable impact where appropriate. Ensure all Sentences are grammatically correct and free of typos. Only give me output, not even extra word.
+    return `Generate 3 unique sentences, in ATS-friendly paragraph for a resume's "Work Experience" section. Each sentence must start with a strong action verb, And do not add any percentage and numbers, highlight specific accomplishments (following an "Action + Result" or "Challenge/Context, Action, Result" structure), incorporate keywords and mirror phrasing from the provided job description, and implicitly or explicitly demonstrate quantifiable impact where appropriate. Ensure all Sentences are grammatically correct and free of typos. Only give me output, not even extra word.
     My Core Experience Summary (for AI reference):
     Designed, developed, and maintained server-side applications and APIs to enhance system efficiency and reliability. Worked on client-based projects, delivering high-quality  backend solutions using JavaScript, Node.js, and MongoDB. Debugged and resolved API performance issues, ensuring  smooth functionality.
 
