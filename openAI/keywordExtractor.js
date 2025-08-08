@@ -65,7 +65,7 @@ const aiPrompt = async (jobDescriptionParam, options) => {
   if (options == "profSummary") {
     // console.log("from prof summary");
 
-    return `Generate a 3-5 sentence professional summary, tailored specifically to the provided job description. The summary should immediately highlight my 2+ years of web development experience, with a strong emphasis on my proficiency in database and API optimization, large data handling, and efficient CI/CD implementation. Incorporate technical keywords from the job description that align with my skills (JavaScript, APIs, SQL, Docker, cloud) while demonstrating my ability to build fast, scalable, and reliable systems. Prioritize the skills and requirements emphasized in the job description that directly align with my past experience. and i have capability of fast learning. 
+    return `Generate a 3-5 sentence professional summary, tailored specifically to the provided job description. The summary should immediately highlight my 4+ years of web development experience, with a strong emphasis on my proficiency in database and API optimization, large data handling, and efficient CI/CD implementation. Incorporate technical keywords from the job description that align with my skills (JavaScript, APIs, SQL, Docker, cloud) while demonstrating my ability to build fast, scalable, and reliable systems. Prioritize the skills and requirements emphasized in the job description that directly align with my past experience. and i have capability of fast learning. 
     Job Description: ${jobDescriptionParam}`
   } else if (options == "shivamPrompt") {
     // prompt.shivamPrompt;

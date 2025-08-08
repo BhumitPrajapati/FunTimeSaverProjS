@@ -101,7 +101,7 @@ export const personalInfo = () => {
 }
 
 export const profSummarry = () => {
-    return "With 2+ years of web development experience, I specialize in building fast, scalable, and reliable backend systems, leveraging technologies like JavaScript, SQL, and cloud infrastructure. My background includes database and API optimization, along with handling large datasets and implementing efficient CI/CD pipelines using tools like Docker. I am eager to apply my skills to developing performant software for Akamai's Edge Platform and am a fast learner, ready to contribute to the Image and Video Manager and EdgeKV products. I am also proficient with scripting languages in Linux/Unix environments.";
+    return "With 4+ years of web development experience, I specialize in building fast, scalable, and reliable backend systems, leveraging technologies like JavaScript, SQL, and cloud infrastructure. My background includes database and API optimization, along with handling large datasets and implementing efficient CI/CD pipelines using tools like Docker. I am eager to apply my skills to developing performant software and I'm a fast learner, I am also proficient with scripting languages in Linux/Unix environments.";
 }
 
 export const jobExperienceTable = (options) => {

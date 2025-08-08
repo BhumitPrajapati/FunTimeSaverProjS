@@ -57,8 +57,8 @@ export default async function createMyWordDocument(aiPrompt) {
                         // Job details table
                         jobExperienceTable({
                             jobTitle: {
-                                title: 'Backend Developer',
-                                type: 'Full-time',
+                                title: 'Sr.Backend Developer',
+                                type: 'Fulltime, (1-Year)',
                                 fontSize: 24, // Example: 12pt
                                 boldTitle: true,
                             },
@@ -83,7 +83,7 @@ export default async function createMyWordDocument(aiPrompt) {
                 jobExperienceTable({
                     jobTitle: {
                         title: 'Backend Developer',
-                        type: 'Internship',
+                        type: 'Fulltime, (3-Years)',
                         fontSize: 24, // Example: 12pt
                         boldTitle: true,
                     },
@@ -94,7 +94,7 @@ export default async function createMyWordDocument(aiPrompt) {
                         boldName: true,
                     },
                     dates: {
-                        range: 'JULY 2022 – DEC 2022',
+                        range: 'JULY 2019 – DEC 2022',
                         fontSize: 24,
                         boldRange: true,
                     },
@@ -160,27 +160,27 @@ export default async function createMyWordDocument(aiPrompt) {
                     ],
                 }),
                 // Volunteer Work
-                new Paragraph({
-                    children: [
-                        new TextRun({
-                            text: "Volunteer Work:", bold: true, size: 28, color: "1155CC"
-                        }),
-                        bottomBorderLine(),
-                        new Paragraph({
-                            children: [
-                                new TextRun({
-                                    text: "Hack The North, University of Waterloo ", bold: true, size: 22
-                                }),],
-                            // text: "Hack The North, University of Waterloo ", bold: true, size: 22,
-                        }),
-                        new Paragraph({
-                            text: "Contributed to brainstorming and exploring innovative ideas while learning new technologies at the Hack the North event.", size: 22, indent: {
-                                left: 720, // Indent 0.5 inches (720 twips) from the left margin
-                                // You can also add right: 720,
-                            },
-                        }),
-                    ],
-                }),
+                // new Paragraph({
+                //     children: [
+                //         new TextRun({
+                //             text: "Volunteer Work:", bold: true, size: 28, color: "1155CC"
+                //         }),
+                //         bottomBorderLine(),
+                //         new Paragraph({
+                //             children: [
+                //                 new TextRun({
+                //                     text: "Hack The North, University of Waterloo ", bold: true, size: 22
+                //                 }),],
+                //             // text: "Hack The North, University of Waterloo ", bold: true, size: 22,
+                //         }),
+                //         new Paragraph({
+                //             text: "Contributed to brainstorming and exploring innovative ideas while learning new technologies at the Hack the North event.", size: 22, indent: {
+                //                 left: 720, // Indent 0.5 inches (720 twips) from the left margin
+                //                 // You can also add right: 720,
+                //             },
+                //         }),
+                //     ],
+                // }),
             ],
         }],
     });
